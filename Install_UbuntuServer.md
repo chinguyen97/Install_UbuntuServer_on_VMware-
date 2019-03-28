@@ -5,44 +5,52 @@
 - Mở Vmware chọn Create a New Virtual Machine để tạo 1 máy ảo mới
 
 <img src="image/1.png">
+
 - Lựa chọn loại cấu hình
 
-<img src="image/2.png">
-
-Option **Typical(recommendede)**: Tạo theo định dạng măc định của máy
-Option **Custom(advanced)**: Các tùy chọn do người dùng cài đặt
-
-Máy ảo được cài đặt với một số tùy chọn mở rộng khác
+	- Option **Typical(recommendede)**: Tạo theo định dạng măc định của máy
+	- Option **Custom(advanced)**: Các tùy chọn do người dùng cài đặt
+	- Máy ảo được cài đặt với một số tùy chọn mở rộng khác
 
 Ở đây mình chọn **Custom**. Nhấn **Next** để tiếp tục.
 
+<img src="image/2.png">
+
+- Tương thích phần cứng: Ở đây phiên bản Umware mình cài là 12.0. Nhấn **Next**
+
 <img src="image/3.png">
 
-Tương thích phần cứng: Ở đây phiên bản Umware mình cài là 12.0. Nhấn **Next**
 - Cài đặt Hệ điều hành
 
-<img src="image/4.png">
 	- Installer disc: Sử dụng ổ đĩa để cài đặt
 	- Installer disc image file(isso): cài băng file iso
 	- I will     Cài đặt hệ điều hành sau. Máy ảo sẽ được tạo với đĩa cứng trống
+
+<img src="image/4.png">
+	
 
 <img src="image/5.png">
 
 - Đặt tên máy ảo và vị trí lưu trữ máy ảo. Muốn thay đổi vị trí nhấn **Browse** chọn vị trí muốn lưu.
 
 <img src="image/6.png">
+
 - Cấu hình bộ vi xử lý (CPU)
 	- Số bộ vi xử lý
 	- Số lõi trên từng bộ vi xử lý
 
 <img src="image/7.png">
+
 - Thiết lập kích thước bộ (RAM)
+
 	- Kích thước tối đa cho phép là 6320MB. 
 	- Kích thước khuyến nghị là 1024MB. 
 	- Kích thước tối thiểu là 512MB.
 
 <img src="image/8.png">
+
 - Kiểu kết nối mạng
+
 	- Kiểu Bridge: Máy ảo sử dụng chung card vật ký với máy thật. Chung dải mạng với máy thậy và có thể ra ngoại internet
 	- Nat: Máy ảo tạo 1 card mạng ra ngoài máy thật. Có teher ra ngoài internet
 	- Hostonly:  Máy ảo tạo 1 card mạng ngoài máy thật và không thể ra ngoài internet 
@@ -55,6 +63,7 @@ Kiểu kết nối này có thể thay đổi được sau.
 <img src="image/10.png">
 
 <img src="image/11.png">
+
 - Lựa chọn ổ đĩa
 	- Create a new vitual disk: Tạp 1 đĩa ảo mới
 	- Use an existing virtual disk : Sử dụng 1 ổ đĩa hiện có. Chọn tùy chọn này để sử dụng lại đĩa được cấu hình trước đó
@@ -77,9 +86,11 @@ Kiểu kết nối này có thể thay đổi được sau.
 - Xem lại tất cả các cấu hình, thiết lập máy ảo rồi nhấn **Finish** để tiến hành cài đặt
 
 <img src="image/15.png">
+
 - Chọn Settings
 
 <img src="image/16.png">
+
 - Chọn file iso để cài đặt 
 
 <img src="image/17.png">
@@ -157,6 +168,7 @@ Nếu bạn không rành về phần này thì chọn  **Guided-use entire disk*
 - Lựa chọn ổ cứng cài đặt
 
 <img src="image/34.png">
+
 - Ghi nhứng thay đổi vào ổ đĩa và cấu hình LVM
 
 <img src="image/35.png">
@@ -172,6 +184,7 @@ Nếu bạn không rành về phần này thì chọn  **Guided-use entire disk*
 <img src="image/39.png">
 
 - Quản lý những nâng cấp hệ thống
+	
 	-**No automatic updates:** Ko tự động cập nhật
 	-**Install security updates automatically:** Cài đặt cập nhật bảo mật tự động
 	-**Manage system with Landscape:** Quản lý hệ thống với Landscape
@@ -184,6 +197,7 @@ Nếu bạn không rành về phần này thì chọn  **Guided-use entire disk*
 - Cài đặt GRUB boot loader lên ổ cứng để lựa chọn cấu hình ổ cứng. 
 
 <img src="image/42.png">
+
 - Sau khi chọn yes  ở trên, quá trình cài đặt OS bắt đầu và kết thúc khi xuất hiện bản thông báo hoàn tất quá trình. Chọn continue và máy sẽ tự restart.
 
 <img src="image/43.png">

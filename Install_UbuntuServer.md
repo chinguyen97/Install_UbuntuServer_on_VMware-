@@ -155,13 +155,13 @@ Kiểu kết nối này có thể thay đổi được sau.
 <img src="image/32.png">
 
 - Lựa chọn hình thức cấu hình chia các partition ổ cứng. ( Partition: các phân vùng ổ cứng)
+	+ **Guided-use entire disk**: Sử dụng cho ổ cứng chưa từng được phân vùng, máy tính sẽ tự động format và định dạng cho từng vùng đã chia.
+	+ **Guided-use entire disk and set up LVM** Tự động phân vùng bằng LVM, là một phương pháp cho phép ấn định không gian đĩa cứng thành những logical volume, khiến cho việc thay đổi kích thước các ổ đĩa dễ dàng hơn mà không phải sửa lại table của OS. Trong trường hợp bạn đã sử dụng hết phần bộ nhớ còn trống của partition và muốn mở rộng dung lượng thì LVM là một sự lựa chọn tốt.
+	+ **Guided-use entire disk and set up encrypted LVM** Giống với lựa chọn 2 nhưng sẽ cài đặt mã hóa ổ cứng để tăng tính bảo mật.
+	+ **Manual**: Phân vùng thủ công
 
 Trình cài đặt sẽ hướng dẫn bạn phân vùng ổ đĩa, hoặc bạn có thể tự phân vùng. Với phân vùng được hướng dẫn thì bạn có thể xem lại và tùy chỉnh kết quả.
 Nếu bạn không rành về phần này thì chọn  **Guided-use entire disk**
-	- **Guided-use entire disk**: Sử dụng toàn bộ ổ cứng
-	- **Guided-use entire disk and set up LVM** Sử dụng toàn bộ ổ cứng và thiết lập LVM
-	-**Guided-use entire disk and set up encrypted LVM** Sử dụng toàn bộ ổ cứng và thiết lập mã hóa LVM
-	-**Manual**: Tự phân vùng ổ cứng
 
 <img src="image/33.png">
 
@@ -183,11 +183,10 @@ Nếu bạn không rành về phần này thì chọn  **Guided-use entire disk*
 
 <img src="image/39.png">
 
-- Quản lý những nâng cấp hệ thống
-	
-	-**No automatic updates:** Ko tự động cập nhật
-	-**Install security updates automatically:** Cài đặt cập nhật bảo mật tự động
-	-**Manage system with Landscape:** Quản lý hệ thống với Landscape
+- Quản lý những nâng cấp hệ thống	
+	- **No automatic updates:** Ko tự động cập nhật
+	- **Install security updates automatically:** Cài đặt cập nhật bảo mật tự động
+	- **Manage system with Landscape:** Quản lý hệ thống với Landscape
 
 <img src="image/40.png">
 - Lựa chọn một số phần mềm cài đặt cùng
